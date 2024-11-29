@@ -14,7 +14,7 @@ export function JobContextProvider(props) {
         //calling the JSON file
         const fetchJobs = async () => {
             try {
-                const fetchedJobData = await fetch('./src/data.json');
+                const fetchedJobData = await fetch('/data.json');
                 const newData = await fetchedJobData.json();
                 setJobs(newData);
             } catch (error) {
